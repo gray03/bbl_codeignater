@@ -67,12 +67,6 @@
 	}
 }
 
-@media(max-width:1500px){
-
-	.int_con_img {
-		max-height: 400px !important;
-	}
-}
 @media(max-width:1200px){
 	.comment_text p{
 		position: relative;
@@ -89,43 +83,11 @@
 		padding-left: 10px !important;
 	}
 	.profile_info {
-		height: 150px !important;
+		height: 160px !important;
 	}
 	.left_conA{
-		width:100%
+		width:75%
 	}
-	.left_conA_clk .sec3{
-		border-right: 0px solid #ccc;
-		border-bottom: 1px solid #eaeaea;
-	    padding: 14px 3px 0px 3px;
-	}
-	#sponsor_con {
-		width: 100%;
-	}
-	
-	.top_header_navi .main_menu li:nth-child(2),.top_header_navi  .main_menu  li:nth-child(3),.top_header_navi  .main_menu  li:nth-child(4),.top_header_navi  .main_menu  li:nth-child(5),.top_header_navi  .main_menu  li:nth-child(6){
-		display:none
-	}
-	.mobile_menu_ul, .mobile_menu{
-		top: -50px;
-		position: absolute;
-		left: 110px;
-		display:inherit !important
-	}
-	
-	.navi_con ul:last-child {
-		position: absolute !important;
-		width: 100%;
-		/* padding-left: 30px; */
-	}
-	
-	.navi_con .mobile_submenu_li li a{
-		color:#004004 !important
-	}
-	.searchInNavi {
-		width: 290px !important;
-	}
-	
 }
 
 @media(max-width:1140px){
@@ -142,6 +104,15 @@
 	/* .searchIconCon{
 		display:inherit !important
 	} */
+	.top_header_navi .main_menu li:nth-child(2),.top_header_navi  .main_menu  li:nth-child(3),.top_header_navi  .main_menu  li:nth-child(4){
+		display:none
+	}
+	.mobile_menu_ul, .mobile_menu{
+		top: -50px;
+		position: absolute;
+		left: 110px;
+		display:inherit !important
+	}
 	.searchInNavi{
 		/* right: 360px; */
 		display: inline-block !important;
@@ -172,6 +143,9 @@
 	.top_header_navi .main_menu ul li:nth-child(2),.top_header_navi  .main_menu ul   li:nth-child(3),.top_header_navi  .main_menu ul   li:nth-child(4){
 		display:inherit !important
 	}
+	.navi_con .mobile_submenu_li li a{
+		color:#004004 !important
+	}
 	.navi_con .mobile_submenu_li{
 		padding-left: 30px;
 		width:100%
@@ -191,28 +165,13 @@
 		width:100% !important;
 		float:none !important
 	}
-
-	.int_con_img {
-		max-height: 600px !important;
-	}
 	
-	#leftnaviMob_con > #sponsor_con, #leftnaviMob_con > .footer_in{
-		display:none
-	}
 }
 
 
 @media(max-width:992px){
 	.left_conA_clk{
 		display:none
-	}
-	.profile_info {
-		height: 200px !important;
-	}
-
-	.withBackground .timeline_withPic, .withBackground .timeline_noPic {
-		top: 55px;
-		position: absolute;
 	}
 }
 @media(max-width:990px){
@@ -221,10 +180,6 @@
 	}
 	.profile_infoRight{
 		width: 80%;
-	}
-	.footer_in{
-		/* display:block !important;
-		padding-left: 15px !important; */
 	}
 }
 @media(max-width:900px){
@@ -323,10 +278,6 @@
 		width: 420px !important;
 		left: 0px;
 	}
-	
-	.searchInNavi {
-		width: 220px !important;
-	}
 }
 
 @media (max-width:768px){
@@ -390,8 +341,7 @@
 		z-index:2;
 		left:0;
 		right:0;
-		margin:auto;
-	    top: 90px;
+		margin:auto
 	}
 	#formReg .inputSec{
 		width:179px;
@@ -412,18 +362,6 @@
 	.left_conA {
 		width: 100%;
 	}
-	.media_option_con{
-	    width: 200% !important;
-	}
-	.withBackground .timeline_withPic, .withBackground .timeline_noPic {
-		top: 135px;
-		position: absolute;
-	}
-	.wrapperCon{
-		height: 700px;
-		margin:85px auto 50px auto
-	}
-	
 }
 
 @media (max-width:767px){
@@ -471,9 +409,6 @@
 @media (max-width:700px){
 	.timeline_button{
 		width:60%;
-	}
-	.searchMenu ul li{	
-		border-bottom: 1px solid #e6e6e6;
 	}
 }
 
@@ -524,7 +459,6 @@
 	}
 	
 }
-
 
 
 @media (max-width:470px){
@@ -635,12 +569,6 @@
 	.top_header_navi_index{
 		height:100px !important
 	}
-	.mobModal{
-		top: 115px;
-	}
-	.wrapperCon {
-		height: 850px;
-	}
 }
 
 @media (max-width:580px){
@@ -705,11 +633,7 @@
 		/* display: inline-block !important; */
 	}
 	.profile_info {
-		height: 180px !important;
-	}
-	.withBackground .timeline_withPic, .withBackground .timeline_noPic {
-		top: 95px;
-		position: absolute;
+		height:220px !important
 	}
 	.profile_info img, .profile_info div div{	
 		margin: auto !important;
@@ -732,7 +656,7 @@
 
 @media(min-width:550px) and (max-width:1200px){
 	.survey_field, .timeline_field{
-		width:100%;
+		width:95%;
 		margin:auto
 	}
 	.user_con{
@@ -750,9 +674,9 @@
 	.top_survey{
 		height:250px;
 	}
-	/* .int_con_img {
+	.int_con_img {
 		max-height:400px !important
-	} */
+	}
 	.top_survey_con,.survey_con_details{
 		height:auto;
 	}
@@ -922,13 +846,13 @@
 }
 @media(min-width:500px) and (max-width:770px){
 	.survey_new_layout_sub{
-		/* width:70% !important */
+		width:70% !important
 	}
 }	
 	
 @media(min-width:470px) and (max-width:555px){
 	.survey_field{
-		width:100%;
+		width:90%;
 		margin: auto;
 	}
 	.survey_con{

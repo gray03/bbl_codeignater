@@ -339,46 +339,6 @@ $(document).ready(function(){
 	});
 	
 	
-	
-	
-	// SEARCH ENGINE
-	$('.searchInputField').keyup(function(){
-		var txt = $(this).val();
-		
-		if(txt != ''){
-			$('.searchInNavi').addClass('searchInNaviMob');
-			$('.container_bg').fadeIn();
-			$.ajax({
-				type: "POST",
-				url: 'ajax/ajax_search.php',
-				data:'search='+txt+'&action=searchBar',
-				beforeSend: function(){
-					$('.searchContainer').html('<h4 style="color: #a2a2a2;"><span class="fa fa-spinner fa-spin fa-fw"></span> Loading ...</h4>');
-				},
-				success:function(data){
-					$('html, body ').addClass('search_noScroll');
-					$('.container_bg ').css('left',0);
-
-					if(data != 'error'){
-						$('.searchContainer').show().html(data);	
-					}else{
-						$('.searchContainer').show().html(data);
-					}
-				}
-			});
-			
-		}else{
-			$('.searchInNavi').removeClass('searchInNaviMob');
-			$('.searchContainer').hide();
-			$('.container_bg').fadeOut();
-			
-			
-		}
-		
-	});
-	
-	
-	
 	//timeago plugins
 
 	//disable right click
@@ -448,6 +408,9 @@ $(document).ready(function(){
 	});
 	
 	
+});
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -475,57 +438,6 @@ function showViewPortSize(widthBody) {
 
  */
  
- 
- 
-//////////////////////////////////////////////////////////////////////////////////////////////
- 
-	//View Image in modal
-	
-	$(this).on("click", ".clkImage", function () {
-	//$('.clkImage').click(function(){
-		var id = $(this).attr('data-survey-id');
-		
-		
-		
-		$.ajax({
-			type: 'GET',
-			url: 'ajax/ajax_viewModal.php',
-			data: 'postID='+id+'&action=getDetails_post',
-			dataType: 'json',
-			beforeSend: function(){
-				$('.viewImgCon #loading').show();
-				//$('.modalViewDec').hide();
-			},
-			success:function(data){
-				$('.viewImgCon #loading').hide();
-				
-				var surveyID = data['survey_id'];
-				var subj = data['survey_subject'];
-				var spec = data['survey_specific'];
-				var img  = data['survey_image'];
-				var cont = data['survey_content'];
-				
-				
-				$('.viewImgCon').html('<center><img src="images/large/'+img+'" class="img-responsive"/></center><h4 >'+subj+'</h4><p style="color: #795548;   font-weight: 800;    font-size: 14px;    position: relative;    word-wrap: break-word;">'+spec+'</p><p style="color: #000596;">'+cont+'</p>');
-				
-				
-			}
-		}); 
-		
-		
-		
-		
-		//alert(id);
-		//$('.viewImgCon').html('<img src="images/'+img+'" class="img-responsive" /><h4>'+subj+'</h4>');
-		
-	});
-	
- 	
-	
-});
-
-
-
  
  
  

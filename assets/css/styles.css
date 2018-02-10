@@ -573,8 +573,7 @@ hr{
 	z-index:22;
 	transform: translateX(0);
     transition: transform 0.5s ease-in-out;
-	overflow: auto; 
-    display: inline-block;
+	overflow:auto
 }
 
 .mobile_submenu_div{
@@ -1902,10 +1901,9 @@ box-shadow: 3px 4px 7px -1px rgba(0,0,0,0.75);
 	border:1px solid #CCCCCC;
 	background-color:#FFF;
 	height:auto;
-	/* overflow:auto; */
+	overflow:auto;
 	padding:10px 15px;
-	margin:0px auto 30px auto;
-    display: inline-block;
+	margin:0px auto 30px auto
 }
 .left_conA_clk_coverPhoto{
 	width:100%;
@@ -2141,4 +2139,4 @@ box-shadow: 3px 4px 7px -1px rgba(0,0,0,0.75);
 .dropdown-menu>li>a{
 	cursor:pointer
 }
-
+}

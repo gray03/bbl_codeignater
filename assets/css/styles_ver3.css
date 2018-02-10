@@ -36,12 +36,13 @@
 	margin-left:0px !important
 }
 #wrapper{
-    background-image: url(../img/snow1.jpg);
+    background-image: url(../../assets/img/snow1.jpg);
     background-attachment: fixed;
     background-size: cover;
     /* overflow: auto; */
     height: auto !important;
     max-height: 1500px !important;
+	padding-top: 92px
 }
 #title {
 	text-align: left !important;
@@ -72,7 +73,7 @@
 	  background-position: 0 center  !important;
 }
 .winkPass {
-    background-image: url(../img/wink.svg);
+    background-image: url(../../assets/img/wink.svg);
     background-repeat: no-repeat;
 	background-position: -44px center;
     cursor: pointer;
@@ -106,8 +107,7 @@
 	margin-bottom:20px
 }
 .footer{
-	width: 100%;height: auto;background-color: #424242;overflow: auto;padding: 10px 15px;    z-index: 1;
-    position: relative;
+	width: 100%;height: auto;background-color: #424242;overflow: auto;padding: 10px 15px;
 }
 .footer ul {
 	display:table-row;
@@ -145,18 +145,13 @@
 }
 
 #register p{
-	color:#000
+	color:#FFF
 }
 
 .inputSec, .bdaySec, .inputCaptcha, .inputTerms{
 	  overflow: inherit;padding:0px 5px
 }
 
-
-.wrapperCon{
-	margin: 110px auto 50px auto; 
-	overflow: auto;
-}
 
 /* END */
 
