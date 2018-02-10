@@ -18,7 +18,9 @@ $hook['post_controller'] = function(){
     $currentController = $CI->router->class;
     $currentMethod = $CI->router->method;
 
-    $viewToRender = $CI->load->view($currentController . "/" . $currentMethod, "", TRUE);
+    $viewData = $CI->appData;
+
+    $viewToRender = $CI->load->view($currentController . "/" . $currentMethod, $viewData, TRUE);
 
     $data = array('view' => $viewToRender);
     $CI->load->view("main", $data);
