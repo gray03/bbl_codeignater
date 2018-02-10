@@ -1,5 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
+
+$CI =& get_instance();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="<?= base_url('assets/'); ?>dist/sweetalert.css">
 	
 	
-	
+	<?php if(isset($assets['css'])): ?>
+		<?php foreach ($assets['css'] as $style): ?>
+			<?= $style; ?>
+		<?php endforeach; ?>
+	<?php endif; ?>
 	<link rel="icon" href="<?= base_url('assets/'); ?>img/behoal_logo.ico">
 </head>
 <body>
@@ -64,11 +71,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	
 	<script src="<?= base_url('assets/'); ?>js/landing_js.js" type="text/javascript"></script>
-	
-	<??>
-	
-	
-	
+
+	<?php if(isset($assets['js'])): ?>
+		<?php foreach ($assets['js'] as $script): ?>
+			<?= $script; ?>
+		<?php endforeach; ?>
+	<?php endif; ?>
 </body>
 
 

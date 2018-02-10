@@ -8,6 +8,7 @@ class BBL_Controller extends CI_Controller {
     // Holds view data for each controller.
     // User 'view' key.
     public $appData = array();
+    public $assets = array();
     
     public function __construct()
     {

@@ -23,6 +23,6 @@ class Landing extends BBL_Controller {
 
         $this->session->set_userdata($sess_data);
 		
-		$this->appData['assets']['js'] = $this->load->view('assets/js/test', "", TRUE);
+		// $this->assets['js'] = array($this->load->view('assets/js/test', "", TRUE));
 	}
 }

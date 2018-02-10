@@ -24,7 +24,7 @@ $hook['post_controller'] = function(){
 
     $data = array(
 		'view' => $viewToRender,
-		'assets' => $CI->appData['assets']
+		'assets' => $CI->assets
 	);
     $CI->load->view("main", $data);
 };
